@@ -4,7 +4,7 @@
 启动方式:
     python -m src.main
     # 或
-    uvicorn src.websocket.server:app --host 0.0.0.0 --port 8000 --reload
+    uvicorn src.websocket.server:app --host 0.0.0.0 --port 18000 --reload
 """
 
 import os
@@ -19,7 +19,7 @@ from .websocket.server import app
 
 def main():
     host = os.getenv("SERVER_HOST", "0.0.0.0")
-    port = int(os.getenv("SERVER_PORT", "8000"))
+    port = int(os.getenv("SERVER_PORT", "18000"))
     log_level = os.getenv("LOG_LEVEL", "info").lower()
 
     logger.info(f"Starting MeetingOpsOS Server on {host}:{port}")
