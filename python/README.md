@@ -26,7 +26,7 @@ cp ../.env.example ../.env
 python -m src.main
 
 # 4. 测试演示模式（无需音频）
-curl -X POST http://localhost:8000/api/v1/meeting/demo/demo
+curl -X POST http://localhost:18000/api/v1/meeting/demo/demo
 ```
 
 ## Docker 启动
@@ -65,4 +65,4 @@ python/
 
 ## API 文档
 
-启动后访问: http://localhost:8000/docs
+启动后访问: http://localhost:18000/docs
